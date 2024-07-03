@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Website </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="project.css">
+    </head>
+    <body>
+        <header>
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <a href="#" class="logo"><span>T</span>ravel</a>
+
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="booking.html">book</a>
+                <a href="#packages">packages</a>
+                <a href="#service">service</a>   
+                <a href="#gallery">gallery</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+              
+
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn" ></i>
+                <i class="fas fa-user" id="login-btn" ></i>
+            </div>
+        
+            <form action="/search" method="get" class="search-bar-container">
+                <input type="search" id="search-bar" name="query" placeholder="Search here...">
+                <label for="search-bar" class="fas fa-search" ></label>
+            </form>
+        </header>
+
+        <div class="login-form-container">
+
+            <i class="fas fa-times" id="form-close"></i>
+
+            <form action="">
+                <h3>Login</h3>
+                <input type="email" class="box" placeholder="enter your email">
+                <input type="password" class="box" placeholder="enter your password">
+                <input type="submit" value="login now" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">remember me</label>
+                <p>forget password? <a href="#">click here</a></p>
+                <p>Don,t have any account? <a href="#">register now</a></p>
+            </form>
+        </div>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Advanture is Worthwhile</h3>
+            <p>Dicover new places with us, Advanture Awaits</p>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="video1.mp4"></span>
+            <span class="vid-btn" data-src="video2.mp4"></span>
+            <span class="vid-btn" data-src="video3.mp4"></span>
+            <span class="vid-btn" data-src="video4.mp4"></span>
+            <span class="vid-btn" data-src="video5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="video1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+
+
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box" onclick="bookNow('Candi Borobudur')">
+                <img src="candi borobudur.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Candi Borobudur</h3>
+                    <p>Candi Borobudur adalah candi Buddha terbesar di dunia, yang dibangun oleh Raja Samaratungga dari dinasti Syailendra pada abad ke-8.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">Rp 2.000.000</div>
+                    <a href="javascript:void(0)" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box" onclick="bookNow('Kawah Ijen')">
+                <img src="kawahijen.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Kawah Ijen</h3>
+                    <p>Kawah Ijen adalah sebuah danau kawah yang terletak di perbatasan Kabupaten Bondowoso dan Kabupaten Banyuwangi, Jawa Timur.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rp 2.500.000</div>
+                    <a href="javascript:void(0)" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box" onclick="bookNow('Gili Trawangan')">
+                <img src="gili trawang.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Gili Trawangan</h3>
+                    <p>Gili Trawangan adalah salah satu dari tiga pulau kecil (gili) yang terletak di sebelah barat laut Pulau Lombok, Nusa Tenggara Barat.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">Rp 2.250.000</div>
+                    <a href="javascript:void(0)" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box" onclick="bookNow('Banda Neira')">
+                <img src="bandaneira.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Banda Neira</h3>
+                    <p>Banda Neira adalah salah satu tujuan wisata populer di Indonesia. Pulau ini dikenal dengan pesona alamnya yang luar biasa dan dijuluki “Sepotong Surga dari Timur".</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rp 3.500.000</div>
+                    <a href="javascript:void(0)" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box" onclick="bookNow('Gunung Bromo')">
+                <img src="bromo.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Gunung Bromo</h3>
+                    <p>Gunung Bromo terkenal dengan pemandangan matahari terbit dan sunsetnya.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">Rp 2.000.000</div>
+                    <a href="javascript:void(0)" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box" onclick="bookNow('Labuan Bajo')">
+                <img src="labuanbajo.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Labuan Bajo</h3>
+                    <p>Labuan Bajo mendapat julukan kota seribu sunset karena keindahan langit yang terkadang berwarna oranye pekat.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rp 3.000.000</div>
+                    <a href="javascript:void(0)" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function bookNow(place) {
+            localStorage.setItem('place', place);
+            window.location.href = 'booking.html';
+        }
+    </script>
+
+    <section class="service" id="service">
+
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p>Hotel dapat menyediakan fasilitas pelayanan barang bawaan, pencucian pakaian, dan dapat menggunakan fasilitas/perabotan dan menikmati hiasan-hiasan yang ada di dalam hotel tersebut. </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p>Hotel dapat menyediakan fasilitas pelayanan barang bawaan, pencucian pakaian, dan dapat menggunakan fasilitas/perabotan dan menikmati hiasan-hiasan yang ada di dalam hotel tersebut. </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safety guide</h3>
+                <p>Hotel dapat menyediakan fasilitas pelayanan barang bawaan, pencucian pakaian, dan dapat menggunakan fasilitas/perabotan dan menikmati hiasan-hiasan yang ada di dalam hotel tersebut. </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>Hotel dapat menyediakan fasilitas pelayanan barang bawaan, pencucian pakaian, dan dapat menggunakan fasilitas/perabotan dan menikmati hiasan-hiasan yang ada di dalam hotel tersebut. </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p>Hotel dapat menyediakan fasilitas pelayanan barang bawaan, pencucian pakaian, dan dapat menggunakan fasilitas/perabotan dan menikmati hiasan-hiasan yang ada di dalam hotel tersebut. </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+                <p>Hotel dapat menyediakan fasilitas pelayanan barang bawaan, pencucian pakaian, dan dapat menggunakan fasilitas/perabotan dan menikmati hiasan-hiasan yang ada di dalam hotel tersebut. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="candi.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>if you are in a beautiful place where you can enjoy sunrise and sunset, then you are living like a lord. </p>
+                    <a href="gallerydetails1.html" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="kawah1.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>if you are in a beautiful place where you can enjoy sunrise and sunset, then you are living like a lord. </p>
+                    <a href="gallerydetails2.html" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="gili.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>if you are in a beautiful place where you can enjoy sunrise and sunset, then you are living like a lord. </p>
+                    <a href="gallerydetails3.html" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="banda.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>if you are in a beautiful place where you can enjoy sunrise and sunset, then you are living like a lord. </p>
+                    <a href="gallerydetails4.html" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="bromo1.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>if you are in a beautiful place where you can enjoy sunrise and sunset, then you are living like a lord. </p>
+                    <a href="gallerydetails5.html" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="bajo.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>if you are in a beautiful place where you can enjoy sunrise and sunset, then you are living like a lord. </p>
+                    <a href="gallerydetails6.html" class="btn">see more</a>
+                </div>
+            </div>
+        </div>
+  
+    </section>
+
+    <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+
+        <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="review1.jpg" alt="">
+                        <h3>Laura Moane</h3>
+                        <p>Thank you for participating in our online travel community. The rapid growth of our online reviews shows the value of honest feedback. Our reviews and star rating system is a huge benefit for consumers and empowers them to make confident decisions, faster.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="review2.jpg" alt="">
+                        <h3>Yasmine </h3>
+                        <p>Thank you for participating in our online travel community. The rapid growth of our online reviews shows the value of honest feedback. Our reviews and star rating system is a huge benefit for consumers and empowers them to make confident decisions, faster.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="review3.jpg" alt="">
+                        <h3>Caitlin Halderman</h3>
+                        <p>Thank you for participating in our online travel community. The rapid growth of our online reviews shows the value of honest feedback. Our reviews and star rating system is a huge benefit for consumers and empowers them to make confident decisions, faster.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="review4.jpg" alt="">
+                        <h3>John Levine</h3>
+                        <p>Thank you for participating in our online travel community. The rapid growth of our online reviews shows the value of honest feedback. Our reviews and star rating system is a huge benefit for consumers and empowers them to make confident decisions, faster.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="contact.jpeg" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send message">
+            </form>
+
+        </div>
+    </section>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>Our services include customized travel planning, group tours, adventure travel, luxury vacations, and more. We pride ourselves on our attention to detail, exceptional customer service, and commitment to making your travel dreams come true.</p>
+                <p>Thank you for choosing Travel Wisata. We look forward to helping you create memories that will last a lifetime.</p>
+            </div>
+            <div class="box">
+                <h3>branch location</h3>
+                <a href="#">Jakarta</a>
+                <a href="#">Aceh</a>
+                <a href="#">Bandung</a>
+                <a href="#">Bogor</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="booking.html">book</a>
+                <a href="#packages">packages</a>
+                <a href="#service">service</a>
+                <a href="#gallery">gallery</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/yourpage" target="_blank">facebook</a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank">instagram</a>
+                <a href="https://twitter.com/yourprofile" target="_blank">twitter</a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin</a>
+            </div>            
+        </div>
+
+        <h1 class="credit">created by <span> Tjut Nyak Ghina Ghazira</span> all right reserved!</h1>
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="project.js"></script>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Detail 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        .heading {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .photo {
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .photo img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .description {
+            text-align: center;
+            padding: 0 20px;
+            color: #555;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+            text-align: center;
+            margin: 20px auto;
+            display: block;
+            width: 200px;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <section class="gallery-detail">
+        <h1 class="heading">Gallery Banda Neira</h1>
+        <div class="gallery-container">
+            <div class="photo">
+                <img src="bandaneira/1.jpg" alt="Gallery 1-1">
+            </div>
+            <div class="photo">
+                <img src="bandaneira/2.jpg" alt="Gallery 1-2">
+            </div>
+            <div class="photo">
+                <img src="bandaneira/3.jpg" alt="Gallery 1-3">
+            </div>
+            <div class="photo">
+                <img src="bandaneira/4.jpg" alt="Gallery 1-4">
+            </div>
+            <div class="photo">
+                <img src="bandaneira/5.jpg" alt="Gallery 1-5">
+            </div>
+            <div class="photo">
+                <img src="bandaneira/6.jpg" alt="Gallery 1-6">
+            </div>
+            <div class="photo">
+                <img src="bandaneira/7.jpg" alt="Gallery 1-6">
+            </div>
+            <div class="photo">
+                <img src="bandaneira/8.jpg" alt="Gallery 1-6">
+            </div>
+            <div class="photo">
+                <img src="bandaneira/9.jpg" alt="Gallery 1-6">
+            </div>
+        </div>
+        <a href="project.html" class="btn">Back to Gallery</a>
+    </section>
+</body>
+</html>
